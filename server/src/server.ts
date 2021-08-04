@@ -9,6 +9,8 @@ import logger from "./utils/logger";
 
 import "./config/database";
 
+import routes from "./routes";
+
 const app = express();
 // Middleware
 app.use(express.json());
@@ -18,9 +20,7 @@ app.use(morgan("dev"));
 app.use(cookieParser());
 
 // Routes
-app.get("/", (_req, res) => {
-    return res.json({ msg: "Hello world!" });
-});
+app.use("/api", routes.authRoutes);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
