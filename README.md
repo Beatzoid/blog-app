@@ -15,7 +15,7 @@ A blog app made using the MERN stack
 
 # Demo
 
-Soon
+[Here](https://beat-blog-app.vercel.app/)
 
 # Credit
 
