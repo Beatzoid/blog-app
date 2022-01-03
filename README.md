@@ -4,7 +4,7 @@ A blog app made using the MERN stack
 
 # Demo
 
-Soon
+https://beat-blog-app.vercel.app/
 
 # Running Locally
 
