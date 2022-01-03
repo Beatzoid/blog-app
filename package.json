@@ -1,0 +1,10 @@
+{
+    "name": "blog-app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "install": "yarn --cwd server install",
+        "build": "yarn --cwd server build",
+        "start": "yarn --cwd server start"
+    }
+}
