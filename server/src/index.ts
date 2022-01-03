@@ -9,6 +9,9 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
 
+// Routes
+import routes from "./routes";
+
 // Middleware
 const app = express();
 
@@ -22,6 +25,8 @@ app.use(cookieParser());
 app.get("/", (_req, res) => {
     res.json({ msg: "Hello World!" });
 });
+
+app.use(routes.authController);
 
 // Main server
 const PORT = process.env.PORT || 5000;
